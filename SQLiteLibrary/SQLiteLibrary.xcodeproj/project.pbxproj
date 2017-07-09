@@ -16,6 +16,7 @@
 		64C16A361F12415F008B4C27 /* SQLiteLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A351F12415F008B4C27 /* SQLiteLibraryTests.swift */; };
 		64C16A411F12415F008B4C27 /* SQLiteLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A401F12415F008B4C27 /* SQLiteLibraryUITests.swift */; };
 		64C16A501F1245D0008B4C27 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C16A4F1F1245D0008B4C27 /* SQLite.framework */; };
+		64C16A571F12471C008B4C27 /* SQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A561F12471C008B4C27 /* SQLiteDataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		64C16A401F12415F008B4C27 /* SQLiteLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteLibraryUITests.swift; sourceTree = "<group>"; };
 		64C16A421F12415F008B4C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C16A4F1F1245D0008B4C27 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		64C16A561F12471C008B4C27 /* SQLiteDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,8 @@
 		64C16A1C1F12415F008B4C27 /* SQLiteLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				64C16A521F124667008B4C27 /* UI */,
+				64C16A531F124667008B4C27 /* DataBase */,
 				64C16A1D1F12415F008B4C27 /* AppDelegate.swift */,
 				64C16A1F1F12415F008B4C27 /* ViewController.swift */,
 				64C16A211F12415F008B4C27 /* Main.storyboard */,
@@ -138,6 +142,21 @@
 				64C16A4F1F1245D0008B4C27 /* SQLite.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64C16A521F124667008B4C27 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		64C16A531F124667008B4C27 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				64C16A561F12471C008B4C27 /* SQLiteDataBase.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +315,7 @@
 			files = (
 				64C16A261F12415F008B4C27 /* SQLiteLibrary.xcdatamodeld in Sources */,
 				64C16A201F12415F008B4C27 /* ViewController.swift in Sources */,
+				64C16A571F12471C008B4C27 /* SQLiteDataBase.swift in Sources */,
 				64C16A1E1F12415F008B4C27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
