@@ -52,9 +52,9 @@ class DataInputViewController: UIViewController {
             let torId = try TeamDataHelper.insert(item:
                 Team(
                     teamId: 0,
-                    city: "Toronto",
-                    nickName: "Blue Jays",
-                    abbreviation: "TOR"
+                    city: city,
+                    nickName: nickName,
+                    abbreviation: abbreviation
                 )
             )
             print(torId)

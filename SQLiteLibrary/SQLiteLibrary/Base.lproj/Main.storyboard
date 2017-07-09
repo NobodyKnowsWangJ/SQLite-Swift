@@ -99,8 +99,27 @@
                     <view key="view" contentMode="scaleToFill" id="eNz-xB-S3K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="558"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-YO-2xf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="558"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KSX-2W-Tz9" id="k3J-9V-mBo"/>
+                                    <outlet property="delegate" destination="KSX-2W-Tz9" id="2pB-qC-lcH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Mo-YO-2xf" firstAttribute="top" secondItem="eNz-xB-S3K" secondAttribute="top" id="1K9-7n-7ZE"/>
+                            <constraint firstAttribute="trailing" secondItem="7Mo-YO-2xf" secondAttribute="trailing" id="EMC-fn-MaP"/>
+                            <constraint firstItem="7Mo-YO-2xf" firstAttribute="leading" secondItem="eNz-xB-S3K" secondAttribute="leading" id="Yql-ua-Vxp"/>
+                            <constraint firstAttribute="bottom" secondItem="7Mo-YO-2xf" secondAttribute="bottom" id="iYy-OF-USD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dataListView" destination="7Mo-YO-2xf" id="xgp-8d-QJq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qR-bR-Fej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

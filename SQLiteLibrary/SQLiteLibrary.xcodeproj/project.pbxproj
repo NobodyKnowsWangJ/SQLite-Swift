@@ -19,6 +19,8 @@
 		64C16A571F12471C008B4C27 /* SQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A561F12471C008B4C27 /* SQLiteDataBase.swift */; };
 		64C16A591F125976008B4C27 /* DataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A581F125976008B4C27 /* DataListViewController.swift */; };
 		64C16A5B1F125983008B4C27 /* DataInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A5A1F125983008B4C27 /* DataInputViewController.swift */; };
+		64C16A601F126C93008B4C27 /* DataListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A5E1F126C93008B4C27 /* DataListTableViewCell.swift */; };
+		64C16A611F126C93008B4C27 /* DataListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C16A5F1F126C93008B4C27 /* DataListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		64C16A561F12471C008B4C27 /* SQLiteDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDataBase.swift; sourceTree = "<group>"; };
 		64C16A581F125976008B4C27 /* DataListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListViewController.swift; sourceTree = "<group>"; };
 		64C16A5A1F125983008B4C27 /* DataInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInputViewController.swift; sourceTree = "<group>"; };
+		64C16A5E1F126C93008B4C27 /* DataListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListTableViewCell.swift; sourceTree = "<group>"; };
+		64C16A5F1F126C93008B4C27 /* DataListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 			children = (
 				64C16A581F125976008B4C27 /* DataListViewController.swift */,
 				64C16A5A1F125983008B4C27 /* DataInputViewController.swift */,
+				64C16A5E1F126C93008B4C27 /* DataListTableViewCell.swift */,
+				64C16A5F1F126C93008B4C27 /* DataListTableViewCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				64C16A2B1F12415F008B4C27 /* LaunchScreen.storyboard in Resources */,
 				64C16A281F12415F008B4C27 /* Assets.xcassets in Resources */,
 				64C16A231F12415F008B4C27 /* Main.storyboard in Resources */,
+				64C16A611F126C93008B4C27 /* DataListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64C16A591F125976008B4C27 /* DataListViewController.swift in Sources */,
+				64C16A601F126C93008B4C27 /* DataListTableViewCell.swift in Sources */,
 				64C16A261F12415F008B4C27 /* SQLiteLibrary.xcdatamodeld in Sources */,
 				64C16A201F12415F008B4C27 /* ViewController.swift in Sources */,
 				64C16A5B1F125983008B4C27 /* DataInputViewController.swift in Sources */,
