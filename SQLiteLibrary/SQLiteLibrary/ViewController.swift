@@ -24,6 +24,9 @@ class ViewController: UIViewController {
     }
     
     func switchViewWithSegment() {
+        let listShowNoti = Notification.Name("DataListViewWillShow")
+        NotificationCenter.default.post(name: listShowNoti, object: nil)
+        
         segementView.selectedSegmentIndex = 0
         listView.isHidden = false
         dataInputView.isHidden = true
@@ -36,6 +39,7 @@ class ViewController: UIViewController {
         }else{
             listView.isHidden = true
             dataInputView.isHidden = false
+            
         }
     }
     

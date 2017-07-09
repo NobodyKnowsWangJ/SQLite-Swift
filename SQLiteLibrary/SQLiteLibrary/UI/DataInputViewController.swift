@@ -16,9 +16,16 @@ class DataInputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    func viewTapped() {
+        self.view.endEditing(true)
     }
     
     @IBAction func saveDataToDataBasw(_ sender: UIButton) {
+        self.view.endEditing(true)
         do{
             try TeamDataHelper.createTable()
         }catch{
@@ -60,12 +67,23 @@ class DataInputViewController: UIViewController {
             print(torId)
         }catch{
             print("Data Insert Error!")
+            return
         }
+        
+        let notification = Notification.Name("CancelInputNotification")
+        NotificationCenter.default.post(name: notification, object: nil)
+        cityTextFierld.text = ""
+        nickNameTextField.text = ""
+        abbreviteTextField.text = ""
     }
     
     @IBAction func cancelInput(_ sender: UIButton) {
+        self.view.endEditing(true)
         let notification = Notification.Name("CancelInputNotification")
         NotificationCenter.default.post(name: notification, object: nil)
+        cityTextFierld.text = ""
+        nickNameTextField.text = ""
+        abbreviteTextField.text = ""
     }
     
     func showErrorAlert(error:saveError) {
