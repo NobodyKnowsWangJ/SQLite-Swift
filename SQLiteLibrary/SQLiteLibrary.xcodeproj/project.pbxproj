@@ -17,6 +17,8 @@
 		64C16A411F12415F008B4C27 /* SQLiteLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A401F12415F008B4C27 /* SQLiteLibraryUITests.swift */; };
 		64C16A501F1245D0008B4C27 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C16A4F1F1245D0008B4C27 /* SQLite.framework */; };
 		64C16A571F12471C008B4C27 /* SQLiteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A561F12471C008B4C27 /* SQLiteDataBase.swift */; };
+		64C16A591F125976008B4C27 /* DataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A581F125976008B4C27 /* DataListViewController.swift */; };
+		64C16A5B1F125983008B4C27 /* DataInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C16A5A1F125983008B4C27 /* DataInputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		64C16A421F12415F008B4C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64C16A4F1F1245D0008B4C27 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 		64C16A561F12471C008B4C27 /* SQLiteDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDataBase.swift; sourceTree = "<group>"; };
+		64C16A581F125976008B4C27 /* DataListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListViewController.swift; sourceTree = "<group>"; };
+		64C16A5A1F125983008B4C27 /* DataInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 		64C16A521F124667008B4C27 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				64C16A581F125976008B4C27 /* DataListViewController.swift */,
+				64C16A5A1F125983008B4C27 /* DataInputViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -313,8 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C16A591F125976008B4C27 /* DataListViewController.swift in Sources */,
 				64C16A261F12415F008B4C27 /* SQLiteLibrary.xcdatamodeld in Sources */,
 				64C16A201F12415F008B4C27 /* ViewController.swift in Sources */,
+				64C16A5B1F125983008B4C27 /* DataInputViewController.swift in Sources */,
 				64C16A571F12471C008B4C27 /* SQLiteDataBase.swift in Sources */,
 				64C16A1E1F12415F008B4C27 /* AppDelegate.swift in Sources */,
 			);

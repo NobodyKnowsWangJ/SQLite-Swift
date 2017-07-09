@@ -29,6 +29,7 @@ class SQLiteDataStore {
         do{
             try TeamDataHelper.createTable()
         }catch{
+            print("create team table error")
             throw DataAccessError.Datastore_Connection_Error
         }
     }
